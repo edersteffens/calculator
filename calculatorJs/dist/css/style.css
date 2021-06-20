@@ -43,7 +43,7 @@ footer{
 }
 
 .box{
-    width: 390px;
+    width: 320px;
     border-radius: 5px;
     background: red;
 }
@@ -65,6 +65,18 @@ footer{
 
 .list-number li{
     width: calc(100% / 4);
+}
+
+.list-number li:first-child{
+    margin-left: 50%;
+}
+
+.list-number li:nth-last-child(-n + 2){
+    margin-left: 25%;
+}
+
+.list-number li:last-child{
+    margin-left: 25%;
 }
 
 .button{
