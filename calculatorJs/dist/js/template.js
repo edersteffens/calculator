@@ -1,10 +1,12 @@
 function add(num){
     var number = document.getElementById('result').innerHTML;
+    document.getElementById('result').classList.remove('active');
     document.getElementById('result').innerHTML = number + num;
 }
 
 function clean(){
-    document.getElementById('result').innerHTML = "0";
+    document.getElementById('result').innerHTML = "";
+    document.getElementById('result').classList.add('active');
 }
  
 function val(){
@@ -13,7 +15,8 @@ function val(){
     if(value){
         document.getElementById('result').innerHTML = eval(value);
     }else{
-        document.getElementById('result').innerHTML = "0"
+        document.getElementById('result').innerHTML = "";
+        document.getElementById('result').classList.add('active');
     }
 }
 
