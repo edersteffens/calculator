@@ -20,24 +20,24 @@
         <main id="main" role="main">
             <div class="container">
                 <div class="box">
-                    <div class="result">555555</div>
+                    <div id="result" class="result">0</div>
                     <ul class="list-number">
-                        <li><button class="button">C</button></li>
-                        <li><button class="button">&#247;</button></li>
-                        <li><button class="button">7</button></li>
-                        <li><button class="button">8</button></li>
-                        <li><button class="button">9</button></li>
-                        <li><button class="button">x</button></li>
-                        <li><button class="button">4</button></li>
-                        <li><button class="button">5</button></li>
-                        <li><button class="button">6</button></li>
-                        <li><button class="button">-</button></li>
-                        <li><button class="button">1</button></li>
-                        <li><button class="button">2</button></li>
-                        <li><button class="button">3</button></li>
-                        <li><button class="button">+</button></li>
-                        <li><button class="button">0</button></li>
-                        <li><button class="button">=</button></li>
+                        <li><button id="key_c" class="button" onclick="clean()">C</button></li>
+                        <li><button id="key_d" class="button" onclick="add('/')">&#247;</button></li>
+                        <li><button id="key_7" class="button" onclick="add('7')">7</button></li>
+                        <li><button id="key_8" class="button" onclick="add('8')">8</button></li>
+                        <li><button id="key_9" class="button" onclick="add('9')">9</button></li>
+                        <li><button id="key_x" class="button" onclick="add('*')">x</button></li>
+                        <li><button id="key_4" class="button" onclick="add('4')">4</button></li>
+                        <li><button id="key_5" class="button" onclick="add('5')">5</button></li>
+                        <li><button id="key_6" class="button" onclick="add('6')">6</button></li>
+                        <li><button id="key_s" class="button" onclick="add('-')">-</button></li>
+                        <li><button id="key_1" class="button" onclick="add('1')">1</button></li>
+                        <li><button id="key_2" class="button" onclick="add('2')">2</button></li>
+                        <li><button id="key_3" class="button" onclick="add('3')">3</button></li>
+                        <li><button id="key_a" class="button" onclick="add('+')">+</button></li>
+                        <li><button id="key_0" class="button" onclick="add('0')">0</button></li>
+                        <li><button id="key_v" class="button" onclick="val()">=</button></li>
                     </ul>
                 </div>
             </div>

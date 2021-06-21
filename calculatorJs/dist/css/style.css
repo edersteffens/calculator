@@ -98,7 +98,7 @@ footer{
     background-color: #474747;
 }
 
-.button:hover{
+.button:hover, .button:focus{
     background: #807e7e;
 }
 
