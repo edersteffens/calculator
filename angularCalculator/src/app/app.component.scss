@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li{
+  list-style: none;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+
+
+  .container{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+  }
+
+  .box{
+    width: 320px;
+    border-radius: 5px;
+    background: #111111;
+  }
+
+  .result{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    background: #2b2a2a;
+    margin: 5px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .result{
+    &.active{
+      &::after{
+        content: '0';
+      }
+    }
+  }
+
+  .list-number{
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      width: calc(100% / 4);
+
+      &:first-child{
+        margin-left: 50%;
+      }
+
+      &:nth-last-child(-n + 2){
+        margin-left: 25%;
+      }
+
+      &:last-child{
+        margin-left: 25%;
+      }
+
+      .button{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 15px 10px;
+        border: transparent;
+        width: 90%;
+        margin: 5%;
+        transition: all .3s;
+        cursor: pointer;
+        background-color: #474747;
+
+        &:hover, &:focus{
+          background: #807e7e;
+        }
+      }
+
+      &:nth-child(4n+2) .button,
+      &:first-child .button,
+      &:last-child .button{
+        background-color: #2b2b2b;
+      }
+
+      &:nth-child(4n+2) .button:hover,
+      &:first-child .button:hover,
+      &:last-child .button:hover{
+        background-color: #807e7e;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: 425px) {
+    .container{
+        width: 100%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<div id="wrapper">
+  <header id="header" role="banner">
+      <h1>{{ autor }} {{ title }}</h1>
+  </header>
+
+  <main id="main" role="main">
+      <div class="container">
+          <div class="box">
+              <div id="result" class="result {{ classActive }}">{{ result }}</div>
+              <ul class="list-number">
+                  <li><button id="key_c" class="button" (click)="clean()">C</button></li>
+                  <li><button id="key_d" class="button" (click)="add('/')">&#247;</button></li>
+                  <li><button id="key_7" class="button" (click)="add('7')">7</button></li>
+                  <li><button id="key_8" class="button" (click)="add('8')">8</button></li>
+                  <li><button id="key_9" class="button" (click)="add('9')">9</button></li>
+                  <li><button id="key_x" class="button" (click)="add('*')">x</button></li>
+                  <li><button id="key_4" class="button" (click)="add('4')">4</button></li>
+                  <li><button id="key_5" class="button" (click)="add('5')">5</button></li>
+                  <li><button id="key_6" class="button" (click)="add('6')">6</button></li>
+                  <li><button id="key_s" class="button" (click)="add('-')">-</button></li>
+                  <li><button id="key_1" class="button" (click)="add('1')">1</button></li>
+                  <li><button id="key_2" class="button" (click)="add('2')">2</button></li>
+                  <li><button id="key_3" class="button" (click)="add('3')">3</button></li>
+                  <li><button id="key_a" class="button" (click)="add('+')">+</button></li>
+                  <li><button id="key_0" class="button" (click)="add('0')">0</button></li>
+                  <li><button id="key_v" class="button" (click)="val()">=</button></li>
+              </ul>
+          </div>
+      </div>
+  </main>
+
+  <footer id="footer" class="container-full">
+      {{ copyright }}
+  </footer>
+</div>
+
+<router-outlet></router-outlet>
